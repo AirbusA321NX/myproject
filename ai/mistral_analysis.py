@@ -8,11 +8,13 @@ _tokenizer = None
 _model = None
 _pipeline = None
 _lock = threading.Lock()
+_loaded = False  # Track loading state separately
+
 
 def _load_model():
-    global _tokenizer, _model, _pipeline
-    with _lock:
-        if _pipeline is None:
+    global _tokenizer, _model, _pipeline, _loaded
+    if not _loaded:  # Ensure we only load once
+        try:
             _tokenizer = AutoTokenizer.from_pretrained(_MODEL_NAME)
             _model = AutoModelForCausalLM.from_pretrained(
                 _MODEL_NAME,
@@ -26,22 +28,44 @@ def _load_model():
                 tokenizer=_tokenizer,
                 device=0 if torch.cuda.is_available() else -1,
             )
-    print(f"_pipeline loaded, type: {type(_pipeline)}")  # <-- add this
+            _loaded = True
+        except Exception as e:
+            log_event("MODEL_LOAD_ERROR", f"Failed to load model: {str(e)}")
+            raise
+
+
 def analyze_text(prompt: str) -> str:
-    global _pipeline
     try:
+        # Ensure model is loaded safely
         with _lock:
-            if _pipeline is None:
+            if not _loaded:
                 _load_model()
-        print(f"Using _pipeline of type {type(_pipeline)}")  # debug line
+
+        # Create local reference while holding lock
+        local_pipeline = _pipeline
+
+        # Verify pipeline is valid
+        if local_pipeline is None:
+            raise RuntimeError("Pipeline initialization failed")
+
+        # Generate prompt
         full_prompt = (
-            "You are a security monitoring AI. Analyze the following input for dangerous behavior, explain why, and suggest mitigation:\n\n"
-            + prompt
+                "You are a security monitoring AI. Analyze the following input for dangerous behavior, "
+                "explain why, and suggest mitigation:\n\n" + prompt
         )
-        result = _pipeline(full_prompt, max_new_tokens=128, do_sample=False)[0]["generated_text"]
-        return result[len(full_prompt):].strip()
+
+        # Process request
+        results = local_pipeline(
+            full_prompt,
+            max_new_tokens=128,
+            do_sample=False,
+            pad_token_id=local_pipeline.tokenizer.eos_token_id  # Ensure proper termination
+        )
+
+        # Extract and clean response
+        generated_text = results[0]["generated_text"]
+        return generated_text[len(full_prompt):].strip()
+
     except Exception as e:
         log_event("AI_ERROR", f"Exception in analyze_text: {str(e)}")
         raise
-
-
