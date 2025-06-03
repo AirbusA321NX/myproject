@@ -1,0 +1,8 @@
+psutil~=7.0.0
+wmi~=1.5.1
+pywin32~=310
+keyboard~=0.13.5
+pyperclip~=1.9.0
+watchdog
+transformers~=4.52.4
+torch~=2.7.0
