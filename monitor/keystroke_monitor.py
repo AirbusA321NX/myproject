@@ -6,6 +6,7 @@ import win32gui
 from utils.logger import log_event
 from utils.popups import show_popup
 from ai.mistral_analysis import analyze_text
+import psutil
 
 _buffer = ""
 _buffer_lock = threading.Lock()
@@ -15,6 +16,19 @@ def _get_active_window_class():
     if hwnd == 0:
         return None
     return win32gui.GetClassName(hwnd)
+
+def _is_terminal_window():
+    hwnd = win32gui.GetForegroundWindow()
+    if hwnd == 0:
+        return False
+    try:
+        GetWindowThreadProcessId = getattr(win32gui, "GetWindowThreadProcessId")
+        _, pid = GetWindowThreadProcessId(hwnd)
+        exe = psutil.Process(pid).name().lower()
+        return exe in ["cmd.exe", "powershell.exe", "wt.exe", "terminal.exe", "bash.exe"]
+    except Exception:
+        return False
+
 
 def _process_input(source: str, content: str):
     try:

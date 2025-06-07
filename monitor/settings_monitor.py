@@ -1,4 +1,3 @@
-import threading
 import time
 import subprocess
 from utils.logger import log_event
@@ -20,9 +19,12 @@ def _get_firewall_state():
         state = {}
         if isinstance(data, list):
             for entry in data:
-                state[entry["Name"]] = entry["Enabled"]
+                if isinstance(entry, dict) and "Name" in entry and "Enabled" in entry:
+                    state[entry["Name"]] = entry["Enabled"]
         else:
-            state[data["Name"]] = data["Enabled"]
+            if isinstance(data, dict) and "Name" in data and "Enabled" in data:
+                state[data["Name"]] = data["Enabled"]
+
         return state
     except Exception as e:
         log_event("SETTINGS_MONITOR_ERROR", f"Firewall query failed: {str(e)}")
