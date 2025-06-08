@@ -7,8 +7,8 @@ _lock = threading.Lock()
 def analyze_text(prompt: str) -> str:
     try:
         full_prompt = (
-                "You are a Windows system monitoring AI. Only flag truly dangerous or malicious changes. If the input is safe, clearly say so and do not raise any alert."
-                + prompt
+            "You are a security monitoring AI. Analyze the following input for dangerous behavior, "
+            "explain why, and suggest mitigation:\n\n" + prompt
         )
 
         with _lock:

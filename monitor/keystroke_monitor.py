@@ -6,76 +6,67 @@ import win32gui
 from utils.logger import log_event
 from utils.popups import show_popup
 from ai.mistral_analysis import analyze_text
-import psutil
 
-_buffer = ""
-_buffer_lock = threading.Lock()
+buffer = ""
+buffer_lock = threading.Lock()
 
-def _get_active_window_class():
-    hwnd = win32gui.GetForegroundWindow()
-    if hwnd == 0:
-        return None
-    return win32gui.GetClassName(hwnd)
-
-def _is_terminal_window():
-    hwnd = win32gui.GetForegroundWindow()
-    if hwnd == 0:
-        return False
+def get_active_window_class():
     try:
-        GetWindowThreadProcessId = getattr(win32gui, "GetWindowThreadProcessId")
-        _, pid = GetWindowThreadProcessId(hwnd)
-        exe = psutil.Process(pid).name().lower()
-        return exe in ["cmd.exe", "powershell.exe", "wt.exe", "terminal.exe", "bash.exe"]
-    except Exception:
-        return False
+        hwnd = win32gui.GetForegroundWindow()
+        return win32gui.GetClassName(hwnd) if hwnd else None
+    except:
+        return None
 
-
-def _process_input(source: str, content: str):
+def analyze_input_async(source, content):
     try:
         result = analyze_text(f"{source}: {content}")
-    except Exception:
-        show_popup("Guardrail AI Failure", f"AI analysis failed for {source}. Restarting AI service.")
-        time.sleep(2)
-        try:
-            analyze_text("ping")
-        except:
-            pass
-        return
-
-    lower = result.lower()
-    if any(k in lower for k in ["danger", "risky", "harm", "breach", "unauthorized"]):
-        show_popup(f"Guardrail Alert: Suspicious Input ({source})", result)
-        log_event("KEYSTROKE_FLAGGED", f"{source}: {content} | AI_response: {result}")
-
-def _on_key(event):
-    global _buffer
-    try:
-        active_class = _get_active_window_class()
-        if active_class and active_class != "ConsoleWindowClass":
-            if event.event_type == "down":
-                if event.name == "enter":
-                    with _buffer_lock:
-                        txt = _buffer.strip()
-                        _buffer = ""
-                    if txt:
-                        _process_input("NON-CMD_WINDOW", txt)
-                elif event.name == "backspace":
-                    with _buffer_lock:
-                        _buffer = _buffer[:-1]
-                elif event.name == "v" and keyboard.is_pressed("ctrl"):
-                    try:
-                        clip = pyperclip.paste()
-                        with _buffer_lock:
-                            _buffer += clip
-                    except:
-                        pass
-                elif len(event.name) == 1:
-                    with _buffer_lock:
-                        _buffer += event.name
+        if any(word in result.lower() for word in ["danger", "risky", "harm", "breach", "unauthorized"]):
+            show_popup(f"Guardrail Alert: Suspicious Input ({source})", result)
+            log_event("KEYSTROKE_FLAGGED", f"{source}: {content} | AI_response: {result}")
     except Exception as e:
-        log_event("KEYSTROKE_MONITOR_ERROR", str(e))
+        log_event("ANALYSIS_ERROR", str(e))
+
+def flush_buffer():
+    global buffer
+    with buffer_lock:
+        content = buffer.strip()
+        buffer = ""
+    return content
+
+def handle_key(event):
+    global buffer
+    try:
+        if event.event_type != "down":
+            return
+
+        if get_active_window_class() == "ConsoleWindowClass":
+            return  # Ignore CMD input
+
+        key = event.name
+
+        with buffer_lock:
+            if key == "enter":
+                content = flush_buffer()
+                if content:
+                    threading.Thread(
+                        target=analyze_input_async,
+                        args=("NON-CMD_WINDOW", content),
+                        daemon=True
+                    ).start()
+            elif key == "backspace":
+                buffer = buffer[:-1]
+            elif key == "v" and keyboard.is_pressed("ctrl"):
+                try:
+                    buffer += pyperclip.paste()
+                except:
+                    pass
+            elif len(key) == 1:
+                buffer += key
+    except Exception as e:
+        log_event("KEY_HANDLER_ERROR", str(e))
 
 def start_monitor():
-    keyboard.hook(_on_key, suppress=False)
+    keyboard.hook(handle_key, suppress=False)
+    print("[Guardrail] Keystroke monitor is running.")
     while True:
-        time.sleep(1)
+        time.sleep(0.2)

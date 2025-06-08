@@ -2,13 +2,14 @@ import threading
 import keyboard
 import pyperclip
 import time
+import ctypes
 import win32gui
 from utils.logger import log_event
 from utils.popups import show_popup
 from ai.mistral_analysis import analyze_text
 
-_buffer = ""
-_buffer_lock = threading.Lock()
+cmd_buffer = ""
+buffer_lock = threading.Lock()
 
 def _get_active_window_class():
     hwnd = win32gui.GetForegroundWindow()
@@ -16,59 +17,62 @@ def _get_active_window_class():
         return None
     return win32gui.GetClassName(hwnd)
 
-def _process_command(command: str):
+def _analyze_and_prompt(command: str):
+    log_event("CMD_ANALYZE", f"Analyzing command: {command}")
     try:
         result = analyze_text(f"CMD: {command}")
-    except Exception:
-        show_popup("Guardrail AI Failure", "AI analysis failed for command. Restarting AI service.")
-        time.sleep(2)
-        try:
-            # attempt reload by calling analyze_text on a trivial prompt
-            analyze_text("ping")
-        except:
-            pass
+    except Exception as e:
+        log_event("AI_FAIL", f"AI failed: {e}")
+        show_popup("Guardrail AI Failure", "AI analysis failed for command.")
         return
 
-    lower = result.lower()
-    if any(k in lower for k in ["danger", "delete", "unstable", "harm", "risk", "breach"]):
-        # Show the AI explanation
-        show_popup("Guardrail Alert: Dangerous CMD Detected", result)
-        log_event("CMD_FLAGGED", f"Command: {command} | AI_response: {result}")
+    result_lower = result.lower()
+    if any(word in result_lower for word in ["danger", "delete", "harm", "unstable", "risk", "breach"]):
+        log_event("CMD_FLAGGED", f"Command: {command} | AI Response: {result}")
+        response = ctypes.windll.user32.MessageBoxW(
+            0,
+            f"Dangerous Command Detected:\n\n{command}\n\nAI: {result}\n\nContinue?",
+            "⚠️ Guardrail",
+            1
+        )
+        if response == 2:
+            log_event("CMD_BLOCKED", f"User blocked command: {command}")
+            return
+        log_event("CMD_ALLOWED", f"User allowed command: {command}")
+    else:
+        log_event("CMD_SAFE", f"Command deemed safe: {command}")
 
 def _on_key(event):
-    global _buffer
+    global cmd_buffer
     try:
         active_class = _get_active_window_class()
-        # Only buffer when console is active
-        if active_class == "ConsoleWindowClass":
+        log_event("KEY_EVENT", f"Key: {event.name} | WindowClass: {active_class}")
+        if active_class in ("ConsoleWindowClass", "CASCADIA_HOSTING_WINDOW_CLASS"):
             if event.event_type == "down":
                 if event.name == "enter":
-                    with _buffer_lock:
-                        cmd = _buffer.strip()
-                        _buffer = ""
+                    with buffer_lock:
+                        cmd = cmd_buffer.strip()
+                        cmd_buffer = ""
                     if cmd:
-                        _process_command(cmd)
+                        _analyze_and_prompt(cmd)
                 elif event.name == "backspace":
-                    with _buffer_lock:
-                        _buffer = _buffer[:-1]
+                    with buffer_lock:
+                        cmd_buffer = cmd_buffer[:-1]
                 elif event.name == "v" and keyboard.is_pressed("ctrl"):
-                    # Grab entire clipboard as paste
                     try:
                         clip = pyperclip.paste()
-                        with _buffer_lock:
-                            _buffer += clip
-                    except:
-                        pass
+                        with buffer_lock:
+                            cmd_buffer += clip
+                    except Exception as e:
+                        log_event("CLIPBOARD_FAIL", str(e))
                 elif len(event.name) == 1:
-                    with _buffer_lock:
-                        _buffer += event.name
-                # ignore other special keys
+                    with buffer_lock:
+                        cmd_buffer += event.name
     except Exception as e:
-        # swallow to keep hook alive
-        log_event("CMD_MONITOR_ERROR", str(e))
+        log_event("KEY_HOOK_ERROR", str(e))
 
 def start_monitor():
+    log_event("CMD_MONITOR", "Starting keyboard hook...")
     keyboard.hook(_on_key, suppress=False)
-    # Keep thread alive indefinitely
     while True:
         time.sleep(1)

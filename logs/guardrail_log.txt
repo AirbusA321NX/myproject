@@ -115,3 +115,99 @@ Suggested mitigation: Ensure that system logs or incident reports contain suffic
 [2025-06-06 14:39:40] [AI_ERROR] Exception in analyze_text via Ollama: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
 [2025-06-06 14:40:53] [KEYSTROKE_FLAGGED] NON-CMD_WINDOW: ollamaserve | AI_response: No alert needed. The provided string "ollamaserve" does not indicate any malicious or dangerous behavior in a Windows system context. It appears to be an unrecognized term without any obvious implications for system safety.
 [2025-06-06 14:42:31] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-07 11:23:00] [SYSTEM_START] Guardrail System is starting.
+[2025-06-07 11:26:00] [KEYSTROKE_FLAGGED] NON-CMD_WINDOW: cd | AI_response: This command does not pose a threat or cause any harmful effects to your system. It simply changes the current directory in a Command Prompt window to the specified path (in this case, no specific path was given). Therefore, there is no need for an alert.
+[2025-06-07 11:50:50] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-08 14:38:12] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:38:56] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:42:36] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:47:38] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:49:56] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:51:59] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 14:58:16] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 15:01:11] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 15:05:58] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 15:07:46] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 15:08:28] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 17:10:26] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 20:37:34] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:25:46] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:25:46] [CMD_MONITOR_STARTED] Command-line monitor started.
+[2025-06-08 23:29:41] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-08 23:29:51] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:29:51] [CMD_MONITOR] CMD_MONITOR started.
+[2025-06-08 23:43:28] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-08 23:43:45] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:43:45] [CMD_MONITOR] CMD_MONITOR started
+[2025-06-08 23:46:55] [SETTINGS_MONITOR_ERROR] Defender query failed: Command '['powershell', '-NoProfile', '-Command', 'Get-MpPreference | Select-Object DisableRealtimeMonitoring | ConvertTo-Json']' returned non-zero exit status 1.
+[2025-06-08 23:46:56] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-08 23:47:00] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:47:00] [CMD_MONITOR] Starting keyboard hook...
+[2025-06-08 23:47:00] [KEY_EVENT] Key: alt | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:47:01] [KEY_EVENT] Key: o | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:01] [KEY_EVENT] Key: o | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: a | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: a | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: m | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: m | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: a | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: a | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: space | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: space | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: s | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: s | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:02] [KEY_EVENT] Key: e | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: e | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: r | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: r | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: v | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: v | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: e | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:47:03] [KEY_EVENT] Key: e | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:56:54] [SETTINGS_MONITOR_ERROR] Defender query failed: Command '['powershell', '-NoProfile', '-Command', 'Get-MpPreference | Select-Object DisableRealtimeMonitoring | ConvertTo-Json']' returned non-zero exit status 1.
+[2025-06-08 23:56:54] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-08 23:56:59] [SYSTEM_START] Guardrail System is starting.
+[2025-06-08 23:56:59] [CMD_MONITOR] Starting keyboard hook...
+[2025-06-08 23:56:59] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:56:59] [KEY_EVENT] Key: alt | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:00] [KEY_EVENT] Key: alt | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:00] [KEY_EVENT] Key: tab | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:00] [KEY_EVENT] Key: alt | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:00] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:01] [KEY_EVENT] Key: alt | WindowClass: SunAwtFrame
+[2025-06-08 23:57:01] [KEY_EVENT] Key: tab | WindowClass: SunAwtFrame
+[2025-06-08 23:57:01] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:01] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:01] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: tab | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:02] [KEY_EVENT] Key: alt | WindowClass: XamlExplorerHostIslandWindow
+[2025-06-08 23:57:03] [KEY_EVENT] Key: c | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:03] [KEY_EVENT] Key: c | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:03] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:03] [KEY_EVENT] Key: l | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:03] [KEY_EVENT] Key: d | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:03] [KEY_EVENT] Key: d | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:04] [KEY_EVENT] Key: enter | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-08 23:57:04] [CMD_ANALYZE] Analyzing command: cld
+[2025-06-08 23:58:03] [CMD_FLAGGED] Command: cld | AI Response: The command "cld" doesn't have any recognized or commonly used meaning in operating systems, which could potentially indicate an unintended or erroneous command. However, it's important to note that the actual danger depends on the context and the environment where this command is being executed (for example, a user's terminal, a server, IoT device, etc.).
+
+Here are a few possible scenarios:
+
+1. Typographical error: The user may have accidentally typed "cld" instead of a known command like "cd" or "clr". In this case, the mitigation would be for the user to double-check their commands before executing them.
+
+2. Unknown or malicious command: If the command is intentionally meant as "cld", it could potentially be an unknown or malicious command that could harm the system or compromise its security. In this case, it's recommended to run a trusted antivirus software and monitor the system for any suspicious activities.
+
+3. Command-line interface experimentation: It's also possible that the user is experimenting with custom commands or scripts in their command-line interface (CLI). In such cases, the user should be cautious about the source of the commands and ensure they fully understand the potential consequences before executing them.
+
+In all scenarios, it's essential to practice safe computing habits, including keeping software updated, using strong passwords, and regularly backing up important data.
+[2025-06-08 23:58:15] [CMD_ALLOWED] User allowed command: cld
+[2025-06-09 00:01:23] [SYSTEM_STOP] Guardrail System is shutting down.

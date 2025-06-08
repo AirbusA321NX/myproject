@@ -1,7 +1,7 @@
 import os
 
 # Set of folders to include (folder names, not full paths)
-include_folders = {"ai", "config", "logs", "monitor" , "utils"}
+include_folders = {"Comments", "Department", "Grievances", "Users"}
 
 def print_tree(start_path, prefix=""):
     try:
@@ -25,7 +25,7 @@ def print_tree(start_path, prefix=""):
                 print_tree(path, prefix + extension)
 
 # Replace this with your root folder
-root_dir = ("D:\pycharm\guardrail_system")
+root_dir = ("D:\pycharm\Grievance_cell")
 
 print(os.path.basename(root_dir) + "/")
 print_tree(root_dir)
