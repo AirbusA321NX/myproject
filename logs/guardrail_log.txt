@@ -211,3 +211,290 @@ Here are a few possible scenarios:
 In all scenarios, it's essential to practice safe computing habits, including keeping software updated, using strong passwords, and regularly backing up important data.
 [2025-06-08 23:58:15] [CMD_ALLOWED] User allowed command: cld
 [2025-06-09 00:01:23] [SYSTEM_STOP] Guardrail System is shutting down.
+[2025-06-21 18:47:31] [SYSTEM_START] Guardrail System is starting.
+[2025-06-21 18:47:31] [CMD_MONITOR] Starting keyboard hook...
+[2025-06-21 18:47:36] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:36] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:36] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:36] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:37] [KEY_EVENT] Key: caps lock | WindowClass: CASCADIA_HOSTING_WINDOW_CLASS
+[2025-06-21 18:47:41] [KEY_EVENT] Key: c | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: c | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: m | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: m | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: d | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: d | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:47:42] [KEY_EVENT] Key: enter | WindowClass: Windows.UI.Core.CoreWindow
+[2025-06-21 18:50:42] [SYSTEM_START] Guardrail System is starting.
+[2025-06-21 18:50:42] [CMD_MONITOR] Starting keyboard hook...
+[2025-06-21 18:50:47] [KEY_EVENT] Key: alt | WindowClass: SunAwtFrame
+[2025-06-21 18:50:47] [KEY_EVENT] Key: tab | WindowClass: SunAwtFrame
+[2025-06-21 18:50:47] [KEY_EVENT] Key: alt | WindowClass: ForegroundStaging
+[2025-06-21 18:50:47] [KEY_EVENT] Key: tab | WindowClass: ForegroundStaging
+[2025-06-21 18:51:03] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:03] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:03] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:03] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:03] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:03] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:04] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:04] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: k | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: k | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:05] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:06] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:07] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:08] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:09] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:10] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:10] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:10] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:10] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:10] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:11] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:11] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:12] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: k | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: k | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:13] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: h | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: h | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: w | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: w | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:14] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: y | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: y | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:15] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: q | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: q | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: u | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: u | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:16] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:17] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:17] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:17] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:17] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: g | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: g | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:18] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:19] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:19] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:19] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:23] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:23] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:23] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:23] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:23] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: v | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: v | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: c | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: c | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:24] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:25] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: s | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: h | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: h | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: w | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: w | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: o | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: g | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:26] [KEY_EVENT] Key: g | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: space | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: t | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:27] [KEY_EVENT] Key: e | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:28] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:28] [KEY_EVENT] Key: r | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:28] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:28] [KEY_EVENT] Key: m | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:29] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:29] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:30] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:30] [KEY_EVENT] Key: backspace | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:30] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: i | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: n | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: a | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: l | WindowClass: Chrome_WidgetWin_1
+[2025-06-21 18:51:31] [KEY_EVENT] Key: enter | WindowClass: Chrome_WidgetWin_1
+[2025-06-22 20:23:23] [CUSTOM_SHELL] Guardrail Secure Shell started.
+[2025-06-22 20:23:30] [CMD_ANALYZE] Analyzing command: ipconfig
+[2025-06-22 20:24:05] [CUSTOM_SHELL] Guardrail Secure Shell started.
+[2025-06-22 20:24:10] [CMD_ANALYZE] Analyzing command: ipconfig
+[2025-06-22 20:24:59] [CMD_FLAGGED] Command: ipconfig | AI Response: The command "ipconfig" itself is not inherently dangerous. It's a standard utility in Windows operating systems that displays IP configuration information about the computer or local network interfaces. However, if this command is being used excessively or at odd hours, it might indicate an attempt to gather network information, which could potentially be suspicious.
+
+To mitigate potential risks, here are some suggestions:
+
+1. Limit the number of times this command can be executed from a single account within a certain timeframe. This helps prevent excessive scanning or probing of the system's IP configuration.
+
+2. Implement monitoring systems to detect unusual patterns of usage, such as repeated "ipconfig" commands during off-hours or within short intervals.
+
+3. Educate users about the potential risks associated with excessive use of this command and encourage them to report any suspicious activity they may encounter.
+
+4. Ensure that your system is up-to-date with the latest security patches and antivirus software, as this can help protect against threats that might exploit such commands.
+[2025-06-22 20:25:57] [CMD_ALLOWED] User allowed command: ipconfig
+[2025-06-22 21:43:32] [SECURE_SHELL_START] Secure Shell started.
+[2025-06-22 21:43:40] [CMD_INPUT] ipconfig
+[2025-06-22 21:44:02] [CMD_AI_RESPONSE] ipconfig | AI: {'DANGEROUS': False, 'reason': "The 'ipconfig' command is a system diagnostic tool that displays IP configuration information for your network adapters. It does not pose any direct danger to the system or network security by itself."}
+[2025-06-22 21:44:02] [SECURE_SHELL_ERROR] the JSON object must be str, bytes or bytearray, not dict
+[2025-06-22 22:25:31] [SECURE_SHELL_START] Secure Shell started.
+[2025-06-22 22:25:35] [CMD_INPUT] ipconfig
+[2025-06-22 22:25:52] [CMD_AI_RESPONSE] ipconfig | AI: {'DANGEROUS': False, 'reason': 'ipconfig is a system command used for displaying TCP/IP parameters and other networking information on Microsoft Windows systems. It does not pose a direct threat to the system.'}
+[2025-06-22 22:25:52] [CMD_SAFE] ipconfig deemed safe
+[2025-06-22 22:26:26] [CMD_INPUT] cd
+[2025-06-22 22:26:34] [CMD_AI_RESPONSE] cd | AI: {'DANGEROUS': False, 'reason': "It is safe as 'cd' command changes the current directory within the same system and does not pose any security risks."}
+[2025-06-22 22:26:34] [CMD_SAFE] cd deemed safe
+[2025-06-22 23:13:05] [SECURE_SHELL_START] Secure Shell started.
+[2025-06-22 23:13:10] [CMD_INPUT] ipconfig
+[2025-06-22 23:13:31] [CMD_AI_RESPONSE] ipconfig | AI: {'DANGEROUS': False, 'reason': 'ipconfig is a command used to view and configure IP address settings on Windows operating systems. It does not pose any inherent security risk when executed by itself.'}
+[2025-06-22 23:13:31] [CMD_SAFE] ipconfig deemed safe
+[2025-06-22 23:35:46] [CMD_INPUT] ls
+[2025-06-22 23:35:59] [CMD_AI_RESPONSE] ls | AI: {'DANGEROUS': False, 'reason': "The command 'ls' simply lists the contents of a directory. It does not pose any immediate security risks."}
+[2025-06-22 23:35:59] [CMD_SAFE] ls deemed safe
+[2025-06-22 23:36:12] [CMD_INPUT] cd
+[2025-06-22 23:36:19] [CMD_AI_RESPONSE] cd | AI: {'DANGEROUS': False, 'reason': "The command 'cd' is used to change the current working directory. It does not inherently pose a security risk."}
+[2025-06-22 23:36:19] [CMD_SAFE] cd deemed safe
+[2025-06-23 00:29:40] [SECURE_SHELL_START] Secure Shell started.
+[2025-06-23 00:29:46] [SECURE_SHELL_EXIT] User exited Secure Shell.
+[2025-06-23 00:30:23] [SECURE_SHELL_START] Secure Shell started.
+[2025-06-23 00:30:29] [CMD_INPUT] ipconfig
+[2025-06-23 00:30:48] [CMD_AI_RESPONSE] ipconfig | AI: {'DANGEROUS': False, 'reason': 'ipconfig command is not inherently dangerous. It displays network configuration information.'}
+[2025-06-23 00:30:48] [CMD_SAFE] ipconfig deemed safe
+[2025-06-23 00:30:59] [CMD_INPUT] dir
+[2025-06-23 00:31:05] [CMD_AI_RESPONSE] dir | AI: {'DANGEROUS': False, 'reason': "The command 'dir' is not inherently dangerous. It displays a list of files and directories in the current directory."}
+[2025-06-23 00:31:05] [CMD_SAFE] dir deemed safe
+[2025-06-23 00:31:18] [CMD_INPUT] ls
+[2025-06-23 00:31:25] [CMD_AI_RESPONSE] ls | AI: {'DANGEROUS': False, 'reason': "The command 'ls' simply lists the files and directories in the current directory. There is no inherent danger in executing this command."}
+[2025-06-23 00:31:25] [CMD_SAFE] ls deemed safe
